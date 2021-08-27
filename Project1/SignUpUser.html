@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+
+<html> 
+<style>
+body{background-image: url(https://img.freepik.com/free-vector/gray-white-gradient-abstract-background_53876-60238.jpg?size=338&ext=jpg);background-size: 100%;}
+	
+
+	</style>
+<script>
+function check()
+{
+ if (document.f.new.value !=
+(document.f.retype.value)
+ {
+ alert("Password and Confirmed Password are not the same");
+ return false;
+ }
+ else
+ return true;
+}
+</script>
+
+ 
+<div align="center">
+<form name="f1"  method="post" action="signup.php" onsubmit="return check();"> 
+
+<h1>Sign Up</h1> 
+
+<br><br> 
+     <p>Username: 
+
+<input name="name" type="text"  required></p>
+
+ 
+
+ 
+<p>&nbsp;&nbsp;Password: 
+
+<input name="old" type="password"  required> </p>
+
+
+
+<p>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail: 
+
+<input name="email" type="email"  required></p>
+	
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone: 
+
+<input name="phone" type="text"  required></p> 
+
+	
+
+
+ 
+
+
+<input type="submit" value="Register"> 
+
+<button onclick="history.go(-1);">Back </button>
+
+ 
+
+</form> 
+	</div>
+
+</html> 
